@@ -1,38 +1,79 @@
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-<!--  If necessary, please modify the charset parameter to specify the        -->
-<!--  character set of your HTML page.                                        -->
-<!--  ----------------------------------------------------------------------  -->
+<!DOCTYPE html>
 
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Submit Case</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Submit Your Case</h1>
+      <form
+        action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8"
+        method="POST"
+      >
+        <input type="hidden" name="orgid" value="00D5i000008wdxh" />
+        <input type="hidden" name="retURL" value="http://www.salesforce.com" />
+        <input
+          placeholder="Contact Name"
+          id="name"
+          maxlength="80"
+          name="name"
+          size="20"
+          type="text"
+        /><br />
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <FORM> element to your page.             -->
-<!--  ----------------------------------------------------------------------  -->
+        <fieldset>
+          <input
+            placeholder="Email"
+            id="email"
+            maxlength="80"
+            name="email"
+            size="20"
+            type="text"
+            tabindex="1"
+            
+            autofocus
+          />
+        </fieldset>
+        <fieldset>
+          <input
+            id="phone"
+            maxlength="40"
+            name="phone"
+            size="20"
+            type="text"
+            placeholder="Phone"
+            tabindex="1"
+            
+            autofocus
+          />
+        </fieldset>
+        <fieldset>
+          <input
+            placeholder="Subject"
+            id="subject"
+            maxlength="80"
+            name="subject"
+            size="20"
+            type="text"
+          />
+        </fieldset>
+        <fieldset>
+          <textarea placeholder="Description" name="description"></textarea>
+        </fieldset>
+        
+        <fieldset>
+          <input type="submit" name="submit" />
+        </fieldset>
+      </form>
+    </div>
 
-<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
-
-<input type=hidden name="orgid" value="00D5i000008wdxh">
-<input type=hidden name="retURL" value="http://www.salesforce.com">
-
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-<!--  these lines if you wish to test in debug mode.                          -->
-<!--  <input type="hidden" name="debug" value=1>                              -->
-<!--  <input type="hidden" name="debugEmail"                                  -->
-<!--  value="varshitanukala04@gmail.com">                                     -->
-<!--  ----------------------------------------------------------------------  -->
-
-<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
-
-<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
-
-<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
-
-<label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
-
-<label for="description">Description</label><textarea name="description"></textarea><br>
-
-<input type="submit" name="submit">
-
-</form>
+    <script src="" async defer></script>
+  </body>
+</html>
