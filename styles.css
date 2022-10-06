@@ -134,17 +134,17 @@ fieldset {
 }
 
 ::-webkit-input-placeholder {
-  color: #888;
+  color: #151f15;
 }
 
 :-moz-placeholder {
-  color: #888;
+  color: #151f15;
 }
 
 ::-moz-placeholder {
-  color: #888;
+  color: #151f15;
 }
 
 :-ms-input-placeholder {
-  color: #888;
+  color: #151f15;
 }
