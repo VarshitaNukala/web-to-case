@@ -13,7 +13,7 @@
 }
 
 h1{
-  color: #173d17;
+  color: #000000;
   padding: 50px;
 }
 
@@ -23,7 +23,15 @@ body {
   font-size: 12px;
   line-height: 30px;
   color: black;
-  background: #a8ff78;
+  background: #696969;
+}
+label{
+  font-size: larger;
+  font-weight: 500;
+}
+#priority{
+  text-align: start;
+  align-items: flex-start;
 }
 
 .container {
